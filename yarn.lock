@@ -1534,6 +1534,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@radix-ui/react-compose-refs@npm:1.1.2":
+  version: 1.1.2
+  resolution: "@radix-ui/react-compose-refs@npm:1.1.2"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/d36a9c589eb75d634b9b139c80f916aadaf8a68a7c1c4b8c6c6b88755af1a92f2e343457042089f04cc3f23073619d08bb65419ced1402e9d4e299576d970771
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-context@npm:1.1.1":
   version: 1.1.1
   resolution: "@radix-ui/react-context@npm:1.1.1"
@@ -1805,7 +1818,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-slot@npm:1.1.2, @radix-ui/react-slot@npm:^1.1.2":
+"@radix-ui/react-slot@npm:1.1.2":
   version: 1.1.2
   resolution: "@radix-ui/react-slot@npm:1.1.2"
   dependencies:
@@ -1817,6 +1830,21 @@ __metadata:
     "@types/react":
       optional: true
   checksum: 10c0/81d45091806c52b507cec80b4477e4f31189d76ffcd7845b382eb3a034e6cf1faef71b881612028d5893f7580bf9ab59daa18fbf2792042dccd755c99a18df67
+  languageName: node
+  linkType: hard
+
+"@radix-ui/react-slot@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@radix-ui/react-slot@npm:1.2.2"
+  dependencies:
+    "@radix-ui/react-compose-refs": "npm:1.1.2"
+  peerDependencies:
+    "@types/react": "*"
+    react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: 10c0/74489f5ad11b17444560a1cdd664c01308206ce5cb9fcd46121b45281ece20273948479711411223c1081f709c15409242d51ca6cc57ff81f6335d70e0cbe0b5
   languageName: node
   linkType: hard
 
@@ -5284,6 +5312,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^12.10.0":
+  version: 12.10.0
+  resolution: "framer-motion@npm:12.10.0"
+  dependencies:
+    motion-dom: "npm:^12.10.0"
+    motion-utils: "npm:^12.9.4"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/46af58aac72dbbdf87063cb4e76d923346b0adcefe635c04b4dca4b4d5f8c1ac298f9efc40c8e30ccbfbf20503d5b9687bcad3a5e0c22f856e5e72446dd14a58
+  languageName: node
+  linkType: hard
+
 "fresh@npm:0.5.2":
   version: 0.5.2
   resolution: "fresh@npm:0.5.2"
@@ -7089,6 +7139,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"motion-dom@npm:^12.10.0":
+  version: 12.10.0
+  resolution: "motion-dom@npm:12.10.0"
+  dependencies:
+    motion-utils: "npm:^12.9.4"
+  checksum: 10c0/1b87cb857d860c9db6bcad3c2176b1fec6536b7ab1a5d2b4eeddfb4f441f76e9bc096bb48c126ffe2d9ea10784a82767d2606bf9ffddfed6b9b9962303ee03af
+  languageName: node
+  linkType: hard
+
 "motion-dom@npm:^12.4.10":
   version: 12.4.10
   resolution: "motion-dom@npm:12.4.10"
@@ -7102,6 +7161,34 @@ __metadata:
   version: 12.4.10
   resolution: "motion-utils@npm:12.4.10"
   checksum: 10c0/5788836c42fad17a07c877cf4a7e407570e2f3125bc821f6673ee3f0e81b6b9c6b8faaa38c8c17c5a82d2b07484fc50162f29de2c69d80f685213fb0012b257b
+  languageName: node
+  linkType: hard
+
+"motion-utils@npm:^12.9.4":
+  version: 12.9.4
+  resolution: "motion-utils@npm:12.9.4"
+  checksum: 10c0/b6783babfd1282ad320585f7cdac9fe7a1f97b39e07d12a500d3709534441bd9d49b556fa1cd838d1bde188570d4ab6b4c5aa9d297f7f5aa9dc16d600c17afdc
+  languageName: node
+  linkType: hard
+
+"motion@npm:^12.10.0":
+  version: 12.10.0
+  resolution: "motion@npm:12.10.0"
+  dependencies:
+    framer-motion: "npm:^12.10.0"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    "@emotion/is-prop-valid": "*"
+    react: ^18.0.0 || ^19.0.0
+    react-dom: ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 10c0/c24c810ade88e437efd41471872ab4f4de2c3461bb92aacb5f62bb2d433842157a10798d22759115b8c1cece8569c8b37a4cd6592b478f3ddfe65184bbbdb594
   languageName: node
   linkType: hard
 
@@ -7125,60 +7212,6 @@ __metadata:
   checksum: 10c0/d924b57e7312b3b63ad21fc5b3dc0af5e78d61a1fc7cfb5457edaf26326bf62be5307cc87ffb6862ef1c2b33b0233cdb5d4f01c4c958cc0d660948b65a287a48
   languageName: node
   linkType: hard
-
-"my-router@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "my-router@workspace:."
-  dependencies:
-    "@radix-ui/react-icons": "npm:^1.3.0"
-    "@radix-ui/react-label": "npm:^2.1.2"
-    "@radix-ui/react-separator": "npm:^1.1.2"
-    "@radix-ui/react-slot": "npm:^1.1.2"
-    "@react-router/dev": "npm:^7.3.0"
-    "@react-router/node": "npm:^7.3.0"
-    "@react-router/serve": "npm:^7.3.0"
-    "@tailwindcss/vite": "npm:^4.0.0"
-    "@types/node": "npm:^22.13.10"
-    "@types/react": "npm:^19.0.2"
-    "@types/react-dom": "npm:^19.0.2"
-    "@typescript-eslint/eslint-plugin": "npm:^6.7.4"
-    "@typescript-eslint/parser": "npm:^6.7.4"
-    ajv: "npm:^8.17.1"
-    ajv-errors: "npm:^3.0.0"
-    ajv-formats: "npm:^3.0.1"
-    class-variance-authority: "npm:^0.7.1"
-    clsx: "npm:^2.1.1"
-    eslint: "npm:^8.38.0"
-    eslint-config-prettier: "npm:^10.1.1"
-    eslint-import-resolver-typescript: "npm:^3.6.1"
-    eslint-plugin-import: "npm:^2.28.1"
-    eslint-plugin-jsx-a11y: "npm:^6.10.2"
-    eslint-plugin-prettier: "npm:^5.2.1"
-    eslint-plugin-react: "npm:^7.37.3"
-    eslint-plugin-react-hooks: "npm:^5.1.0"
-    eslint-plugin-simple-import-sort: "npm:^12.1.1"
-    eslint-plugin-unused-imports: "npm:^4.0.0"
-    isbot: "npm:^5.1.17"
-    json-schema-to-ts: "npm:^3.1.1"
-    lint-staged: "npm:^15.5.0"
-    lucide-react: "npm:^0.479.0"
-    prettier: "npm:^3.5.3"
-    prettier-plugin-tailwindcss: "npm:^0.6.11"
-    react: "npm:^19.0.0"
-    react-dom: "npm:^19.0.0"
-    react-router: "npm:^7.3.0"
-    react-router-devtools: "npm:^1.1.6"
-    resolve-accept-language: "npm:^3.1.6"
-    simple-git-hooks: "npm:^2.11.1"
-    tailwind-merge: "npm:^3.0.2"
-    tailwindcss: "npm:^4.1.4"
-    tailwindcss-animate: "npm:^1.0.7"
-    typescript: "npm:^5.1.6"
-    vite: "npm:^6.0.6"
-    vite-plugin-svgr: "npm:^4.3.0"
-    vite-tsconfig-paths: "npm:^5.1.4"
-  languageName: unknown
-  linkType: soft
 
 "nanoid@npm:^3.3.7":
   version: 3.3.7
@@ -8109,6 +8142,61 @@ __metadata:
   checksum: 10c0/817909584adf4d84d70768e41c7fdf66bf9affd980499742a2da54378e5c8be53a0867bf72bdfb441fa4aa35c79847585990b6e31c91e6647e789ba68e9b08a2
   languageName: node
   linkType: hard
+
+"react-toss@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-toss@workspace:."
+  dependencies:
+    "@radix-ui/react-icons": "npm:^1.3.0"
+    "@radix-ui/react-label": "npm:^2.1.2"
+    "@radix-ui/react-separator": "npm:^1.1.2"
+    "@radix-ui/react-slot": "npm:^1.2.2"
+    "@react-router/dev": "npm:^7.3.0"
+    "@react-router/node": "npm:^7.3.0"
+    "@react-router/serve": "npm:^7.3.0"
+    "@tailwindcss/vite": "npm:^4.0.0"
+    "@types/node": "npm:^22.13.10"
+    "@types/react": "npm:^19.0.2"
+    "@types/react-dom": "npm:^19.0.2"
+    "@typescript-eslint/eslint-plugin": "npm:^6.7.4"
+    "@typescript-eslint/parser": "npm:^6.7.4"
+    ajv: "npm:^8.17.1"
+    ajv-errors: "npm:^3.0.0"
+    ajv-formats: "npm:^3.0.1"
+    class-variance-authority: "npm:^0.7.1"
+    clsx: "npm:^2.1.1"
+    eslint: "npm:^8.38.0"
+    eslint-config-prettier: "npm:^10.1.1"
+    eslint-import-resolver-typescript: "npm:^3.6.1"
+    eslint-plugin-import: "npm:^2.28.1"
+    eslint-plugin-jsx-a11y: "npm:^6.10.2"
+    eslint-plugin-prettier: "npm:^5.2.1"
+    eslint-plugin-react: "npm:^7.37.3"
+    eslint-plugin-react-hooks: "npm:^5.1.0"
+    eslint-plugin-simple-import-sort: "npm:^12.1.1"
+    eslint-plugin-unused-imports: "npm:^4.0.0"
+    isbot: "npm:^5.1.17"
+    json-schema-to-ts: "npm:^3.1.1"
+    lint-staged: "npm:^15.5.0"
+    lucide-react: "npm:^0.479.0"
+    motion: "npm:^12.10.0"
+    prettier: "npm:^3.5.3"
+    prettier-plugin-tailwindcss: "npm:^0.6.11"
+    react: "npm:^19.0.0"
+    react-dom: "npm:^19.0.0"
+    react-router: "npm:^7.3.0"
+    react-router-devtools: "npm:^1.1.6"
+    resolve-accept-language: "npm:^3.1.6"
+    simple-git-hooks: "npm:^2.11.1"
+    tailwind-merge: "npm:^3.0.2"
+    tailwindcss: "npm:^4.0.0"
+    tailwindcss-animate: "npm:^1.0.7"
+    typescript: "npm:^5.1.6"
+    vite: "npm:^6.0.6"
+    vite-plugin-svgr: "npm:^4.3.0"
+    vite-tsconfig-paths: "npm:^5.1.4"
+  languageName: unknown
+  linkType: soft
 
 "react@npm:^19.0.0":
   version: 19.0.0
@@ -9171,17 +9259,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.0.12":
+"tailwindcss@npm:4.0.12, tailwindcss@npm:^4.0.0":
   version: 4.0.12
   resolution: "tailwindcss@npm:4.0.12"
   checksum: 10c0/186e94e49b97e974daf999c350bfc50e727039f22c44baf9144b987b6c9b754bc983e8c9ef5b99a3ca2d399115eb7811967f66cf9e88edc08ac729746d80dc56
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:^4.1.4":
-  version: 4.1.4
-  resolution: "tailwindcss@npm:4.1.4"
-  checksum: 10c0/4927653b740861f0279b6b465c87e188652d3c0e311c633b4efe5d72bbb4dce12b9dddc674a386a3d0454ef4dd4951aac6fd7346dcd9b2b2b06952e431c1835d
   languageName: node
   linkType: hard
 
