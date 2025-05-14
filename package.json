@@ -4,6 +4,7 @@
   "sideEffects": false,
   "type": "module",
   "scripts": {
+    "vercel-build": "prisma generate && prisma migrate deploy && react-router build",
     "build": "react-router build",
     "dev": "react-router dev",
     "format": "prettier --write .",
@@ -11,9 +12,6 @@
     "prepare": "simple-git-hooks",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
-  },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
   },
   "simple-git-hooks": {
     "pre-commit": "yarn lint-staged",
@@ -50,7 +48,8 @@
     "react-router": "^7.3.0",
     "resolve-accept-language": "^3.1.6",
     "tailwind-merge": "^3.0.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vite-plugin-static-copy": "^3.0.0"
   },
   "devDependencies": {
     "@react-router/dev": "^7.3.0",
